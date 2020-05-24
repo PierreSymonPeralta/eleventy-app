@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Blog</title>
+        <link rel="stylesheet" href="/assets/styles.css">
+    </head>
+    <body>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/posts">Posts</a></li>
+          <li><a href="/characters">Characters</a></li>
+        </ul>
+      </nav>
+      {% block banner %}
+        <div class="banner">Banner</div>
+      {% endblock banner %}
+      <div class="main">
+         <h1>{{pageTitle}}</h1>
+        {{ content | safe }}
+      </div>
+    </body>
+</html>

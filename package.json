@@ -1,0 +1,17 @@
+{
+  "name": "simple-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "clean": "rm -rf _site",
+    "serve": "npm run clean && npx @11ty/eleventy --serve",
+    "eleventy": "npm run clean && npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
